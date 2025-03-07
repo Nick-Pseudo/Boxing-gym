@@ -1,0 +1,675 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #e1dcbe ;
+    background: #ee1c25;
+}
+
+
+
+@media (min-width: 320px){
+
+    body{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #e1dcbe;
+        width: 100vw;
+        max-width: 100%;
+    
+    }
+    
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+
+
+    /*Animations*/
+
+    @keyframes fadeIn {
+    from{
+         opacity: 0;
+    }
+    to {
+         opacity: 1;
+    }
+    }
+
+    @keyframes slideDown {
+        from {
+            top: -100px; /* Start above */
+            opacity: 0;
+        }
+        to {
+            top: 0; /* Ends at normal position */
+            opacity: 1;
+        }
+    }
+
+
+    /*header*/
+
+
+    header{
+        display: flex;
+        width: 100vw;
+        height: 6vh;
+        background-color: black;
+        top: -100px; 
+        animation: slideDown 1s ease-out 1.5s forwards;
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 6vh;
+        background-color: black;
+        top: -100px; 
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        
+    }
+
+    ul li{
+        padding-top: 5px;
+        margin: 0 45px;
+    }
+
+    li a{
+        font-size: 1rem;
+        color: #ee1c25;
+        text-decoration: none;
+        cursor: crosshair;
+    }
+
+
+    /*main*/
+
+
+    .logo{
+        position: relative;
+        top: 4vh;
+        margin-left: 10%;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+        opacity: 0;
+        animation: fadeIn 1s ease-in 1s forwards;  
+    }
+
+    .tel{
+        position: relative;
+        width: 150px;
+        left: 28%;
+        top: 1vh;
+        opacity: 0;
+        animation: fadeIn 1s ease-in 1s forwards; 
+    }
+
+    address{
+        position: relative;
+        top: 1.5vh;
+        left: 1%;
+        opacity: 0;
+        animation: fadeIn 1s ease-in 1s forwards; 
+
+    }
+
+    .container{
+        position: relative;
+        top: 2vh;
+        width: 100%;
+        min-height: 110vh;
+        margin: 0;
+        border: #ee1c25 dashed 2px;
+        padding: 10px;
+
+    }
+
+    .topleft{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .topright{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .bottomright{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .bottomleft{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .accents{
+        color: #ee1c25;
+    }
+
+
+    .firstP{
+        background-color: black;
+        color: #e1dcbe;
+        
+
+    }
+
+    .pic1{
+        float: right;
+        width: 20vh;
+        height: auto;
+        transform: scaleX(-1);
+    }
+
+    .breaker{
+        position: relative;
+        top: 0.5vh;
+        float: left;
+        padding-left: 38%;
+        justify-content: center;
+        color: #ee1c25;
+        
+        
+    }
+
+    .breaker2{
+        position: relative;
+        top: 0vh;
+        float: left;
+        padding-left: 38%;
+        justify-content: center;
+        color: #ee1c25;
+        
+    }
+
+    .pic2{
+        margin: 20px auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .belts{
+        position: absolute;
+        top: 94%;
+        float:left;
+        padding-left: 16%;
+        margin-bottom: 20%;
+
+    }
+
+    .belts img{
+        width: 10vh;
+        height: auto;
+        padding-left: 2vh;
+    }
+
+    .belts2{
+        position: absolute;
+        float: left;
+
+    }
+
+    .belts2 img{
+        display: none;
+        
+    }
+
+    /*footer*/
+
+    footer {
+        background-color: black;
+        color:#ee1c25;
+        text-align: center;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    address{
+        position: relative;
+    }
+
+    /* About section */
+     .backgroundimage{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: -1000;
+     }
+     .we_are{
+        margin: 0 70px 0 70px;
+        justify-content: center;
+        text-align: center;
+        color: #ee1c25;
+        font-family: 'Bowlby One SC','Cascadia Code', monospace;
+        animation: fadeIn 1s ease-in 1s forwards;
+     }
+
+    .para{
+        margin-top: 100px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #e1dcbe;
+        font-family: 'Senserif','Cascadia Code', monospace;
+        
+    }
+
+    .family{
+        position: relative;
+        margin: 0 10px 0 15px;
+        width: 90%;
+        height: auto;
+        box-shadow: 5px 10px 3px #6e0a0f4a;
+    }
+
+    /* Class section*/
+
+    .we_offer{
+        position: relative;
+        margin: 10px 80px 0 80px;
+        color: #ee1c25;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Bowlby One SC','Cascadia Code', monospace;
+        animation: fadeIn 1s ease-in 1s forwards;
+    }
+
+    .classbackground{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .boxingfit{
+        margin: 0 10px 20px 15px;
+        float: right;
+        width: 78%;
+        height: auto;
+        box-shadow: 5px 5px 2px #ee1c25;
+        transform: scaleX(-1);
+    }
+
+    .casualboxer{
+        margin: 0 10px 20px 15px;
+        float: left;
+        width: 78%;
+        height: auto;
+        box-shadow: 5px 5px 2px #ee1c25;
+        transform: scaleX(-1);
+    }
+    .femaleclasses{
+        margin: 0 10px 20px 15px;
+        float: right;
+        width: 78%;
+        height: auto;
+        box-shadow: 5px 5px 2px #ee1c25;
+    }
+    .amateur{
+        margin: 0 10px 20px 15px;
+        float: left;
+        width: 78%;
+        height: auto;
+        box-shadow: 5px 5px 2px #ee1c25;
+        transform: scaleX(-1);
+    }
+    .femaleboxer{
+        margin: 0 10px 20px 15px;
+        float: right;
+        width: 78%;
+        height: auto;
+        box-shadow: 5px 5px 2px #ee1c25;
+    }
+    .proboxers{
+        margin: 0 10px 20px 15px;
+        float: left;
+        width: 78%;
+        height: auto;
+        box-shadow: 5px 5px 2px #ee1c25;
+        transform: scaleX(-1);
+    }
+    .proring{
+        float: right;
+        width: 100%;
+        height: auto;
+
+    }
+
+    h1 {
+        color: #ec0a15;
+        font-family: 'Bowlby One SC','Cascadia Code', monospace;
+    }
+
+    .lesson1{
+        position: absolute;
+        font-size: 9px;
+        width: 40%;
+        height: 7%;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.09);
+        border:#ec0a15 solid 2px;
+        margin-left: 5%;
+        margin-top: 2%;
+        padding-left: 1%;
+        
+    }
+
+    .lesson2{
+        position: absolute;
+        right: 0;
+        font-size: 9px;
+        width: 30%;
+        height: 7%;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.09);
+        border:#ec0a15 solid 2px;
+        margin-right: 5%;
+        margin-top: 60%;
+        padding-left: 1%;
+        
+    }
+
+    .lesson3{
+        position: absolute;
+        font-size: 9px;
+        width: 40%;
+        height: 7%;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.09);
+        border:#ec0a15 solid 2px;
+        margin-left: 5%;
+        margin-top: 120%;
+        padding-left: 1%;
+        
+    }
+
+    .lesson4{
+        position: absolute;
+        right:0;
+        font-size: 9px;
+        width: 40%;
+        height: 7%;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.09);
+        border:#ec0a15 solid 2px;
+        margin-right: 5%;
+        margin-top: 175%;
+        padding-left: 1%;
+        
+    }
+
+    .lesson5{
+        position: absolute;
+        font-size: 9px;
+        width: 40%;
+        height: 7%;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.09);
+        border:#ec0a15 solid 2px;
+        margin-right: 5%;
+        margin-top: 250%;
+        padding-left: 1%;
+        
+    }
+    
+
+    /* coaches section */
+    .they{
+        text-align: center;
+        width: 50%;
+        margin: 10px 90px 10px 80px;
+        animation: fadeIn 1s ease-in 1s forwards;
+    }
+    .coaches{
+        width: 100%;
+        height: auto;
+        z-index: -1000;
+    }
+
+    .coach1{
+        position: absolute;
+        top:45%;
+        left: 44%;
+        padding: 3px;
+        font-size: 6px;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.09);
+        border:#ec0a15 solid 1px;
+        opacity: 0;
+        animation: fadeIn 1s ease-in 1s forwards; 
+    }
+
+    .coach2{
+        position: absolute;
+        top:48%;
+        left: 14%;
+        padding: 3px;
+        font-size: 6px;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.09);
+        border:#ec0a15 solid 1px;
+        opacity: 0;
+        animation: fadeIn 1s ease-in 2s forwards; 
+    }
+
+    .coach3{
+        position: absolute;
+        top:48%;
+        left: 69%;
+        padding: 3px;
+        font-size: 6px;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.09);
+        border:#ec0a15 solid 1px;
+        opacity: 0;
+        animation: fadeIn 1s ease-in 3s forwards; 
+    }
+    
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ee1c25;
+    }
+
+    .contact1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ee1c25;
+    }
+
+}
+
+@media (min-width: 425px){
+    .belts{
+        padding-left: 30px;
+        
+    }
+
+    .they{
+        margin-left: 110px;
+    }
+
+    .contact1{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Tablets */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+
+    .breaker, .breaker2 {
+        margin-left: 45.5vh ;
+    }
+
+}
+
+/* Laptops */
+@media (min-width: 1024px) {
+    body {
+        font-size: 30px;
+        overflow-x: hidden;
+    }
+
+    header, nav{
+        display: flex;
+        position: fixed;
+        height: 50px;
+    }
+
+    li a{
+        
+        font-size: 20px;
+    }
+
+    .logo{
+        width: 38%;
+        height: auto;
+        margin-left: 63vh;
+    }
+
+    .tel{
+        width: auto;
+        margin-left: 11%;
+        
+    }
+
+    address{
+        margin-left: 26.5%;
+        
+    }
+
+    .container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: black;
+        border-color: #e1dcbe;
+    }
+
+    .firstP{
+        position: relative;
+        left: 10px;
+        width: 200vh;
+        height: 60vh;
+        color: #e1dcbe;
+    }
+
+    .pic1{
+        width: 40vh;
+    }
+
+    .breaker, .breaker2{
+        position: relative;
+        margin-left: 5.5%;
+    }
+
+    .breaker2{
+        margin-top: 1%;
+    }
+
+    .belts{
+        left: 20.5%;
+    }
+
+    .belts2{
+        left: 14%;
+    }
+
+    .belts img, .belts2 img{
+        width: 10%;;
+    }
+
+    /* about section*/
+
+    .we_are{
+        margin-top: 60px;
+    }
+    
+    .family{
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    /* class section */
+
+    .we_offer{
+        margin-top: 60px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    /* coach section*/
+
+    .they{
+        margin-top: 60px;
+        margin-left: 300px;
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ee1c25;
+    }
+
+    .contact1{
+        display: flex;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        color: #ee1c25;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1280px) {
+    body {
+        font-size: 22px;
+    }
+}
